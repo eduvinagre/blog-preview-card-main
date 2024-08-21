@@ -70,12 +70,19 @@
         font-weight: 500;
         margin-bottom: 8px;
       }
-      .card .content .title {
+      .card .content .title a {
         color: #111111;
         font-size: 24px;
         font-weight: 800;
+        text-decoration: none;
         margin-bottom: 8px;
         line-height: 150%;
+      }
+      /* Hover effect for Title */
+      .card .content .title a:hover {
+        cursor: pointer;
+        color: #f4d04e;
+        transition: 0.2s ease-in-out;
       }
       .card .content .description {
         color: #6b6b6b;
@@ -98,10 +105,6 @@
         color: #111111;
         font-size: 14px;
         font-weight: 800;
-      }
-      /* Hover effect */
-      .card:hover {
-        transform: scale(1.05);
       }
       /* Responsive Design */
       @media (min-width: 1024px) {
@@ -130,7 +133,9 @@
       <div class="content">
         <div class="tag">Learning</div>
         <div class="date">Published 21 Dec 2023</div>
-        <div class="title">HTML & CSS foundations</div>
+        <div class="title">
+          <a href="#">HTML & CSS foundations</a>
+        </div>
         <div class="description">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
