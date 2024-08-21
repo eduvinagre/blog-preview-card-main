@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: 'Figtree', sans-serif;
+        background-color: #f4d04e;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 8px 8px 8px 0px #000000;
+        overflow: hidden;
+        width: 100%;
+        max-width: 327px;
+        height: auto;
+        margin: auto 24px;
+        text-align: left;
+        transition: transform 0.3s ease-in-out;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .card .content {
+        padding: 16px;
+      }
+      .card .content .tag {
+        background-color: #f4d04e;
+        color: #111111;
+        font-size: 14px;
+        font-weight: 800;
+        padding: 4px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+      .card .content .date {
+        color: #6b6b6b;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      .card .content .title {
+        color: #111111;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 8px;
+        line-height: 150%;
+      }
+      .card .content .description {
+        color: #6b6b6b;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        margin-bottom: 16px;
+      }
+      .card .content .author {
+        display: flex;
+        align-items: center;
+      }
+      .card .content .author img {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+      }
+      .card .content .author .name {
+        color: #111111;
+        font-size: 14px;
+        font-weight: 800;
+      }
+      /* Hover effect */
+      .card:hover {
+        transform: scale(1.05);
+      }
+      /* Responsive Design */
+      @media (min-width: 1024px) {
+        .card {
+          max-width: 387px;
+          margin-left: 587px;
+          margin-right: 587px;
+        }
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: auto;
+        padding: 16px 0;
+        width: 100%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="/assets/images/illustration-article.svg" alt="Course Image" />
+      <div class="content">
+        <div class="tag">Learning</div>
+        <div class="date">Published 21 Dec 2023</div>
+        <div class="title">HTML & CSS foundations</div>
+        <div class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </div>
+        <div class="author">
+          <img src="/assets/images/image-avatar.webp" alt="Greg Hooper" />
+          <div class="name">Greg Hooper</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Eduardo Vinagre</a>.
+    </div>
+  </body>
+</html>
